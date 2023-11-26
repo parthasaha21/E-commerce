@@ -1,0 +1,390 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.all-imgs{
+    height: 80vh;
+    display: flex;
+}
+.smallimgs{
+    display: flex;
+    flex-direction: column;
+}
+.smallimgs img{
+    height: 14vh;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+.smallimgs img:hover{
+    border: 2px solid blue;
+}
+.main-img img{
+    width: 100%;
+}
+button{
+    width: 220px;
+    height: 54px;
+}
+.cart-btn{
+    color: white;
+    background-color: rgb(255, 173, 22);
+    border: none;
+    margin-top: 10px;
+}
+.buy-btn{
+    background-color: rgb(255, 124, 2);
+    border: none;
+    margin-top: 10px;
+}
+.buy-btn:hover{
+    background-color:rgb(255, 124, 2) ;
+}
+.cart-btn:hover{
+    background-color:rgb(255, 173, 22) ;
+    color: white;
+}
+.review{
+    display: flex;
+    flex-direction: row;
+}
+.review p {
+     color: white;
+     background-color: rgb(50, 165, 50);
+     border-radius: 2px;
+     font-size: 15px;
+     padding: 3px;
+}
+.review .star{
+    font-size: 11px;
+   
+}
+.mainDiv{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.fixed{
+    position: fixed;
+    width: 45%;
+}
+.right_Section{
+    position: absolute;
+    right: 0;
+    width: 45%;
+}
+.review .reting{
+    font-size:13px ;
+    font-weight: 500;
+}
+.review .rating-num{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(155, 160, 165);
+}
+.extra-off{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(50, 165, 50);
+}
+.price-box .price{
+    font-weight: 500;
+    font-size: 25px;
+}
+strike{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(155, 160, 165);
+}
+.off{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(50, 165, 50);
+}
+.packing{
+    font-weight: 400;
+    font-size: 15px;
+    color: black;
+    padding-bottom: 10px;
+}
+.bank-offer h3 {
+    font-size: 18px;
+}
+.tag{
+    color:rgb(50, 165, 50) ;
+    padding-right: 8px;
+}
+.bank-offer .bank-text{
+    color: black;
+    font-weight: 500;
+    padding-right: 8px;
+}
+.tc{
+    color: rgb(43, 43, 250);
+    font-weight: 500;
+}
+.bank-offer p {
+    font-weight: 400;
+}
+.view a{
+    color: rgb(43, 43, 250);
+    text-decoration: none;
+    font-weight: 500;
+}
+.main-btn{
+    display: none;
+}
+.more a{
+    color:rgb(43, 43, 250) ;
+    font-weight: 500;
+    text-decoration: none;
+}
+.apple{
+    padding-right: 30px;
+    font-size: 25px;
+}
+.stg{
+    color:rgb(128, 127, 127) ;
+}
+.gb{
+    border: 2px solid rgb(173, 171, 171);
+    padding: 4px;
+}
+.gb a {
+    text-decoration: none;
+    color: #000;
+}
+.gb:hover{
+    border: 2px solid rgb(43, 43, 250);
+}
+.dv{
+    color:rgb(155, 148, 148) ;
+}
+.dc{
+    font-weight: 500;
+}
+.free{
+    color:rgb(50, 165, 50) ;
+    font-weight: 500;
+}
+.viewd a{
+    text-decoration: none;
+    padding-left: 110px;
+    font-weight: 500;
+}
+.high{
+    color:rgb(155, 148, 148)  ;
+}
+.description{
+    color: rgb(155, 148, 148);
+}
+.pd-text{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+.cinematic-div{
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.product-description{
+    border: 1px solid rgb(231, 230, 230) ;
+    padding:15px ;
+}
+.cinematic-div{
+    border: 1px solid rgb(231, 230, 230) ;
+    padding:15px ;
+}
+.view-div {
+    border: 1px solid rgb(231, 230, 230) ;
+    padding-left:250px ;
+    padding: 10px;  
+}
+.view-div a{
+    text-decoration: none;
+    font-weight: 500;
+}
+@media only screen and (max-width:1200px){
+    button{
+        width: 120px;
+        height: 44px;
+        font-size: 10px;
+    }
+    .main-img img{
+        width: 100%;
+        height: 400px;
+    }
+    .main-btn button{
+       display: none !important;
+    }
+}
+
+
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid rgb(71, 71, 169);
+}
+
+button {
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input,select,textarea:hover{
+    border: 1px solid rgb(71, 71, 169);
+}
+.reting-star{
+    color:green;
+    font-size: 21px;
+}
+.fa-star {
+    font-size: 21px;
+}
+.specifications-div .specification{
+    color:rgb(155, 148, 148) ;
+    padding-right: 100px ;
+}
+.spect{
+    padding-left: 20px ;
+}
+.mainDiv{
+    height: 300vh;
+}
+
+ 
+ header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        #products {
+            max-width: 1500px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            width: 200px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .product h2 {
+            font-size: 15px;
+          
+        }
+
+        .product p {
+            color: #777;
+        }
+
+        .product button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        #categories {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #categories ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #categories li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .product img {
+           width: 40%;
+        }
+        .review-div{
+    display: flex;
+    flex-direction: row;
+}
+.review-div p {
+     color: white;
+     background-color: rgb(50, 165, 50);
+     border-radius: 2px;
+     font-size: 15px;
+     padding: 3px;
+}
+.review-div .star{
+    font-size: 11px;
+   
+}
+.price-boxs .price{
+    font-weight: 500;
+    font-size: 25px;
+}
+strike{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(155, 160, 165);
+}
+.off{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(50, 165, 50);
+}
+.price-boxs p {
+    color: black;
+    font-weight: 600;
+}

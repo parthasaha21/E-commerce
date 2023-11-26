@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/4b8bc3066b.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <!-- bootstrap cdm -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="cart.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- navbar start -->
+        <div class="nav mb-5">
+            <nav class="navbar  navbar-expand-lg navbar- fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand  demo-word p " href="#">Shopcart</a>
+                    <button
+                        class="navbar-toggler shadow-none border-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar"
+                        aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class=" sidebar offcanvas offcanvas-start"
+                        tabindex="-1"
+                        id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel"
+                    >
+                        <div class="offcanvas-header  border-bottom">
+                            <h5 class="offcanvas-title " id="offcanvasNavbarLabel">About</h5>
+                            <button
+                                type="button"
+                                class="btn-close btn-close-white shadow-none"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body  d-flex flex-column  flex-lg-row p-4 p-lg-0">
+                            <ul class="navbar-nav  align-items-center flex-grow-1 pe-3  ps-3">
+                                <li class="nav-item d-flex">
+                                    <a class="nav-link mx-2 px-3 py-1  ps-4" aria-current="page" href="#mans-card">MAN</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 ps-2 py-1" href="#women-card">WOMEM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 ps-2 py-1" href="#kids-card">KIDS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 ps-2 py-1" href="#homes-and-living-card">HOME & LIVING</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 ps-2 py-1" href="#beauty-card">BEAUTY</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link mx-2 ps-2 py-1" href="#eclectronic-card">ECLECTRONICE</a>
+                                </li>
+                                <li class="nav-item ps-4">
+                                    <div class="container-fluid scarch-box">
+                                        <form class="d-flex">
+                                            <i class="fa-solid fa-magnifying-glass pt-2"></i>
+                                            <input
+                                                class="form-control scarch-input me-2"
+                                                type="search"
+                                                placeholder="Search for products"
+                                                aria-label="Search"
+                                            >
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="d-flex justify-content-center profiles align-items-center gap-3 flex-column flex-lg-row">
+                                <div>
+                                    <i class="fa-sharp fa-regular fa-user ps-3"></i>
+                                    <br>
+                                    <a href="" class="  text-decoration-none">  Profile</a>
+                                </div>
+                                <div>
+                                    <i class="fa-regular fa-heart ps-4"></i>
+                                    <br>
+                                    <a href="" class=" text-decoration-none px-2 py-1 ">Wishlist</a>
+                                </div>
+                                <div>
+                                    <i class="fa fa-shopping-cart ps-2" aria-hidden="true"></i>
+                                    <br>
+                                    <a href="" class=" text-decoration-none px-2 py-1 ">Cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- navbar end -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-8 col-12">
+                    <div class="cart-container">
+                        <div class="cart">
+                            <div class="cart-header">
+                                <h1>dilivary: to partha saha 743223
+                                    <br>
+                                    <span> Nalonda more ,habra
+                                    </h1>
+                                </span>
+                            </div>
+                            <div class="cart-items">
+                                <div class="cart-item">
+                                    <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=90" alt="Product 1">
+                                    <div class="item-details">
+                                        <h6>APPLE iPhone 14 (Blue, 128 GB)
+                                        </h3>
+                                        <div class="price-box">
+                                            <p class="price">
+                                                &#8377;77,900
+                                                <strike class="ps-1">&#8377; 79,900</strike>
+                                                <span class="off ps-2">12%off</span>
+                                            </p>
+                                        </div>
+                                        <div class="quantity">
+                                            <label for="quantity1">Quantity:</label>
+                                            <input
+                                                type="number"
+                                                id="quantity1"
+                                                value="1"
+                                                min="1"
+                                            >
+                                        </div>
+                                    </div>
+                                    <button class="remove-btn">Remove</button>
+                                </div>
+                                <div class="cart-item pt-5">
+                                    <img src="https://rukminim2.flixcart.com/image/224/224/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=90" alt="Product 2">
+                                    <div class="item-details">
+                                        <h6>vivo T2x 5G (Glimmer Black, 128 GB)
+                                        </h3>
+                                        <div class="price-box">
+                                            <p class="price">
+                                                &#8377;17,900
+                                                <strike class="ps-1">&#8377; 19,900</strike>
+                                                <span class="off ps-2">10%off</span>
+                                            </p>
+                                        </div>
+                                        <div class="quantity">
+                                            <label for="quantity2">Quantity:</label>
+                                            <input
+                                                type="number"
+                                                id="quantity2"
+                                                value="1"
+                                                min="1"
+                                            >
+                                        </div>
+                                    </div>
+                                    <button class="remove-btn">Remove</button>
+                                </div>
+                            </div>
+                            <div class="cart-footer">
+                                <button class="checkout-btn ">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-12 ">
+                    <div class="price-details">
+                        <h6>PRICE DETAILS</h6>
+                        <hr>
+                        <p>Price (9 items) &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ₹2,12,378</p>
+                        <p>Discount &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span>− ₹58,385</span>
+                        </p>
+                        <p>Delivery Charges &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+                            <strike>₹400</strike>
+                            <span>Free</span>
+                        </p>
+                        <p>Secured Packaging Fee &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; ₹364</p>
+                        <hr>
+                        <br>
+                        <h5>Total Amount &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ₹1,54,357
+                        </p>
+                        <br>
+                        <hr>
+                        <span>You will save ₹58,021 on this order</span>
+                    </div>
+                    <div class="safe ps-3">Safe and Secure Payments.Easy returns.100%
+                        <br>
+                        Authentic products.
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <div class="container footer-div mt-5" id="footer">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">ABOUT</h1>
+                            <p><a href="">Contact us</a> <br>
+                               <a href="">About us</a><br>
+                               <a href="">Careers  </a>  <br>
+                               <a href="">Press</a><br>
+                               <a href="">Cleartrip
+                            </a><br>
+                               <a href="">Shopcart stories</a><br>
+    
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">HELP
+                            </h1>
+                            <p class="pb-4"><a href="">                                
+                                          Payment</a><br>
+                                <a href=""> Shiping</a><br>
+                                <a href="">Canceletion and return</a><br>
+                                <a href=""> FAQ</a><br>
+                                <a href="">Report</a><br>
+                               
+                                </p>
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">CONSUMER POLICY
+                            </h1>
+                            <p><a href=""> Cancellation & Returns
+                             
+                              
+                             
+                             
+                             
+                             </a><br>
+                                <a href="">   Terms Of Use</a><br>
+                                <a href=""> Security</a><br>
+                                <a href=""> Privacy</a><br>
+                                <a href=""> Sitemap</a><br>
+                                <a href="">  Grievance Redressal</a><br>
+                                <a href="">  EPR Compliance</a><br>
+                               </p>
+                        </div>
+        
+                        <div class="col-6 col-lg-3 col-md-6">
+                             <h1 class="fw-bold">Follow Us
+                            </h1>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/profile.php?id=100021996673749" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            </footer>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecom-page</title>
+    <link rel="stylesheet" href="ecom.css">
+    <script src="https://kit.fontawesome.com/4b8bc3066b.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bootstrap cdm -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+        crossorigin="anonymous"
+    >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- navbar start -->
+
+    <div class="nav mb-5">
+        <nav class="navbar  navbar-expand-lg navbar- fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand  demo-word p " href="#">Shopcart</a>
+                <button
+                    class="navbar-toggler shadow-none border-0"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class=" sidebar offcanvas offcanvas-start"
+                    tabindex="-1"
+                    id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel"
+                >
+                    <div class="offcanvas-header  border-bottom">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">About</h5>
+                        <button
+                            type="button"
+                            class="btn-close btn-close-white shadow-none"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body  d-flex flex-column  flex-lg-row p-4 p-lg-0">
+                        <ul class="navbar-nav  align-items-center flex-grow-1 pe-3  ps-3">
+                            <li class="nav-item d-flex">
+                                
+                                <a class="nav-link mx-2 px-3 py-1  ps-4" aria-current="page" href="#mans-card">MAN</a>
+                            </li>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link mx-2 ps-2 py-1" href="#women-card">WOMEM</a>
+                            </li>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link mx-2 ps-2 py-1" href="#kids-card">KIDS</a>
+                            </li>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link mx-2 ps-2 py-1" href="#homes-and-living-card">HOME & LIVING</a>
+                            </li>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link mx-2 ps-2 py-1" href="#beauty-card">BEAUTY</a>
+                            </li>
+                            <li class="nav-item">
+                                
+                                <a class="nav-link mx-2 ps-2 py-1" href="#eclectronic-card">ECLECTRONICE</a>
+                            </li>
+                            <li class="nav-item ps-4">
+                                
+                                <div class="container-fluid scarch-box">
+                                    <form class="d-flex">
+                                        <i class="fa-solid fa-magnifying-glass pt-2"></i>
+                                      <input  class="form-control scarch-input me-2"  type="search" placeholder="Search for products" aria-label="Search">
+                                     
+                                    </form>
+                                  </div>
+                            </li>
+                        </ul>
+                        <div class="d-flex justify-content-center profiles align-items-center gap-3 flex-column flex-lg-row">
+                          <div> <i class="fa-sharp fa-regular fa-user ps-3"></i> <br>
+                            <a href=""  class="  text-decoration-none">  Profile</a></div> 
+                            <div><i class="fa-regular fa-heart ps-4"></i><br>
+                            <a href="" class=" text-decoration-none px-2 py-1 " >Wishlist</a>
+                        </div>
+                        <div><i class="fa fa-shopping-cart ps-2" aria-hidden="true"></i>
+                            <br>
+                            <a href="" class=" text-decoration-none px-2 py-1 " >Cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+    <!-- carasol-div start -->
+    <div id="carouselExampleIndicators" class="carousel carasol-div container slide mt-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner carousol-imgs">
+          <div class="carousel-item active">
+            <img src="https://marketplace.canva.com/EAFED0hv9G0/1/0/1600w/canva-blue-pink-modern-special-offer-Dont miss the offer-banner-J5VkNReQ8WA.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.bauerhosting.com/celebrity/sites/3/2016/11/Header_1Aranyani.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.luxurylifestylemag.co.uk/wp-content/uploads/2023/02/bigstock-Cropped-Shot-Of-Legs-Of-Team-O-470452845.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://next136.files.wordpress.com/2021/02/anareport_601790a6a552c_4916.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.the-sun.com/wp-content/uploads/sites/6/2022/09/EP_IPHONE_COLORS_COMP.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+       
+      </div>
+    <!-- carasol-div end -->
+
+    <!-- offer-section start -->
+    <div class="offers ">
+        <div class="container">
+            <h1 class="P-1">TOP DEALS</h1>
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-4">
+                    <a href="">
+                        <div class="offer-box text-center position-relative">
+                            <div class="offer-inner">
+                                <div class="offer-img position-relative overflow-hidden">
+                                    <img src="https://www.apple.com/newsroom/images/product/ipad/standard/apple_ipad-pro-spring21_hero_04202021_big.jpg.large.jpg"  class="img-fluid ipad-img">
+                                    <div class="offer-overflow"></div>
+                                </div>
+                                <div class="offer-info">
+                               <div class="offer-info-inner">
+                                <p class="headling-bigger text-capitalize">Sale 30%</p>
+                                <p class="offer-title-1  text-capitalize font-weight-bold">Don't miss this chance</p>
+                                <button type="button"  class="btn btn-outline-danger offer-button mt-4">Shop Now</button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-4 d-flex flex-column justify-content-between">
+                    <a href="">
+                        <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                            <div class="offer-inner">
+                                <div class="offer-img position-relative overflow-hidden ">
+                                    <img src="https://assets.mspimages.in/gear/wp-content/uploads/2022/07/Nothing-Phone-1-Colour-Options-MySmartPrice.jpeg" class="img-fluid  offer-photo-div ">
+                                    <div class="offer-overflow"></div>
+                                </div>
+                                <div class="offer-info">
+                               <div class="offer-info-inner">
+                                <p class="headling-bigger text-capitalize">Sale 60%</p>
+                                <p class="offer-title-1  text-capitalize font-weight-bold">Don't miss this chance</p>
+                                <button type="button"  class="btn btn-outline-danger mt-4">Shop Now</button>
+                               </div>
+                            </div>
+                        </div>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div class="offer-box text-center position-relative ">
+                            <div class="offer-inner">
+                                <div class="offer-img position-relative overflow-hidden ">
+                                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202303/oneplus_11r_launch-sixteen_nine.jpg?VersionId=xYln9mJMSlGKD1HWuNUxnGx00tjcAdqT&size=690:388" class="img-fluid  offer-photo-div ">
+                                    <div class="offer-overflow"></div>
+                                </div>
+                                <div class="offer-info">
+                               <div class="offer-info-inner">
+                                <p class="headling-bigger text-capitalize">Sale 45%</p>
+                                <p class="offer-title-1 headling-bigger text-capitalize font-weight-bold">Don't miss this chance</p>
+                                <button type="button"  class="btn btn-outline-danger mt-4">Shop Now</button>
+                               </div>
+                            </div>
+                        </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-12 col-md-4 col-lg-4 d-flex flex-column justify-content-between">
+                  <a href="">
+                      <div class="offer-box text-center position-relative mb-4 mb-sm-0 mb-lg-0">
+                          <div class="offer-inner">
+                              <div class="offer-img position-relative overflow-hidden ">
+                                <img src="https://imageio.forbes.com/specials-images/imageserve/63fa2c2ad4092acbb40f01ad/Apple--iPhone-15--iPhone-15-Pro-Max--iPhone-15-Pro--iPhone-15-Pro-design--iPhone-15/0x0.jpg?crop=4855,3644,x567,y0,safe&height=533&width=711&fit=bounds"  class="img-fluid  offer-photo-div ">
+                                  <div class="offer-overflow"></div>
+                              </div>
+                              <div class="offer-info">
+                             <div class="offer-info-inner">
+                              <p class="headling-bigger text-capitalize">Sale 50%</p>
+                              <p class="offer-title-1  text-capitalize font-weight-bold">Don't miss this chance</p>
+                              <button type="button"  class="btn btn-outline-danger mt-4">Shop Now</button>
+                             </div>
+                          </div>
+                      </div>
+                      </div>
+                  </a>
+
+                  <a href="">
+                      <div class="offer-box text-center position-relative ">
+                          <div class="offer-inner">
+                              <div class="offer-img position-relative overflow-hidden ">
+                                  <img src="https://media.gq.com/photos/63233d7c8b78ce2d64b8c8a7/16:9/w_2560%2Cc_limit/AppleWATCH_HP.jpg" class="img-fluid  offer-photo-div  ">
+                                  <div class="offer-overflow"></div>
+                              </div>
+                              <div class="offer-info">
+                             <div class="offer-info-inner">
+                              <p class="headling-bigger text-capitalize">Sale 35%</p>
+                              <p class="offer-title-1 headling-bigger text-capitalize font-weight-bold">Don't miss this chance</p>
+                              <button type="button"  class="btn btn-outline-danger mt-4">Shop Now</button>
+                             </div>
+                          </div>
+                      </div>
+                      </div>
+                  </a>
+              </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  
+    <!-- offer-section end -->
+    <!-- men's fashion div start -->
+
+    <div class="container mt-5 "  id="mans-card">
+        <h1 class="pb-1 font-weight-bold"> MEN'S FASHION</h1>
+        <h3  class="pb-4">Up to 35% Off</h3>
+        <div class="row">
+            <div class="man-div col-12 col-lg-2 col-md-4" >
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/532278616/photo/perfect-match.jpg?s=612x612&w=0&k=20&c=mdMGXG-gb2ByZV2O0zMhI4C6oDGGkIOmKk_cvTCvDZI=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.freepik.com/premium-photo/black-tshirts-with-copy-space_816702-240.jpg?size=626&ext=jpg&ga=GA1.1.1341483703.1677395687&semt=ais" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$699 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/1204853121/photo/man-in-front-of-blackboard-at-school.jpg?s=612x612&w=0&k=20&c=ywuIPQa5AzKmpGdmpv3bhZJ3WFb8QI25lZho1zEUcHk=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$1,999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images.unsplash.com/photo-1615368144592-44708889c926?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwd2F0Y2h8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$489 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/1047482606/photo/handsome-young-man-using-perfume.jpg?s=612x612&w=0&k=20&c=usNGUymofDXZ0j3_y2kuAbQ8k7HLO-u7XRGMUs85Fsw=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$399 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/1363123453/photo/anonymous-teacher-packing-his-leather-backpack-in-the-library.jpg?s=612x612&w=0&k=20&c=tpUsSavjvAQpJsbFHLSsRgOaX_zCixPL7MjgUW5cqUU=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">Form just <span>$149 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+     <!-- men's fashion div end -->
+      <!-- women div start  -->
+      <div class="container mt-5" id="women-card">
+        <h1 class="pb-1 font-weight-bold"> WOMEN'S FASHION</h1>
+        <h3  class="pb-4">Up to 45% Off</h3>
+        <div class="row" >
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://static.toiimg.com/photo/79814734.cms" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">25 %off <span>$999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://imgmedia.lbb.in/media/2022/09/63280b6f6e5fb64e9bd00d4e_1663568751983.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">30% off <span>$699 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://cdn0.weddingwire.in/article/1803/original/1280/jpg/103081-western-dresses-images-14.jpeg" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">40% off <span>$799 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/951927816/photo/woman-checking-time-her-watch.jpg?s=2048x2048&w=is&k=20&c=IToi--ymHFae1254Gj2ZQNU153GwpjZDxSFbzf4CU0M=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">49% off <span>$2,489 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://rukminim2.flixcart.com/image/550/650/kqfj1jk0/top/d/0/m/s-plt216whiteshirt-pretty-loving-thing-original-imag4fx8a85enrmg.jpeg?q=90&crop=false" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">35% off <span>$1,399 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images-cdn.ubuy.co.in/64a3b9369d39e07c905b9ea7-sneakers-women-39-s-canvas-shoes-cute.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">45% off <span>$1,249 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    
+       <!-- women div end -->
+
+           <!-- kids div start  -->
+      <div class="container mt-5" id="kids-card">
+        <h1 class="pb-1 font-weight-bold"> KID'S FASHION</h1>
+        <h3  class="pb-4">Up to 55% Off</h3>
+        <div class="row">
+            <div class="man-div col-12 col-lg-2 col-md-4 " >
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://image.made-in-china.com/2f0j00FWNVTjnrlJYL/China-Wholesale-Children-S-Kids-Wear-Baby-Children-Clothes-New-Design-Wedding-Fashion-Girl-Dress.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">43% off <span>$999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.faballey.com/images/Product/IGS00063Z/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">25% off <span>$499 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://rukminim2.flixcart.com/image/550/650/xif0q/kids-dress/j/2/z/2-3-years-mira-frock-this-elegant-dress-is-at-the-top-of-the-original-imagp4byxvbethn4.jpeg?q=90&crop=false" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">50% off <span>$699 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://i.pinimg.com/originals/db/87/62/db87623c25753f012b723a1797765bfe.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">49% off <span>$989 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://i.pinimg.com/170x/bc/6f/16/bc6f1608b38dfbf87b82f1115578ad70.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">45% off <span>$1,199 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://i.pinimg.com/236x/83/5f/0e/835f0ea5af2af4e0198f7c5295e5d1e3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">39% off <span>$1,099 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    
+       <!-- kids div end -->
+
+       
+           <!-- homes & living div start  -->
+      <div class="container mt-5" id="homes-and-living-card">
+        <h1 class="pb-1 font-weight-bold"> HOMES & LIVING</h1>
+        <h3  class="pb-4">Up to 60% Off</h3>
+        <div class="row">
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://ii1.pepperfry.com/media/catalog/product/m/e/800x400/mersin-3-seater-sofa-in-teal-colour---amberville-in-pepperfry-mersin-3-seater-sofa-in-teal-colour----e6zofn.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">43% off <span>$5,999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images.hindustantimes.com/img/2022/07/07/400x225/split_ac_1657175603855_1657175667706.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">55% off <span>$43,499 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="data:image/jpeg;base64,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" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">50% off <span>$70,999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.freepik.com/premium-photo/big-tv-living-room-elegant-living-room-with-big-tv-screen-generative-aixa_174954-591.jpg?size=626&ext=jpg&ga=GA1.1.1341483703.1677395687&semt=ais" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">59% off <span>$80,789 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://cdn.pixabay.com/photo/2014/08/10/08/22/electric-fan-414575_1280.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">45% off <span>$9,999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2057&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">39% off <span>$45,099 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    
+       <!-- homes & living div end -->
+
+                <!-- beauty div start  -->
+      <div class="container mt-5"id="beauty-card">
+        <h1 class="pb-1 font-weight-bold"> BEAUTY PRODUCTS</h1>
+        <h3  class="pb-4">Up to 70% Off</h3>
+        <div class="row">
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://media.istockphoto.com/id/525806120/photo/make-up-with-cosmetics-and-brushes-isolated-on-pink-background.jpg?s=612x612&w=0&k=20&c=ji7W-xMBErQKpIJi7-EqVIsW-GoZhKOL1KxI3ktL4fw=" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">63% off <span>$1,799 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.freepik.com/free-photo/different-type-makeup-products-black-backdrop_23-2147899438.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">35% off <span>$3,399 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.freepik.com/premium-photo/collection-make-up-cosmetic-beauty-products-arranged-wooden-table-background_768733-721.jpg" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">69% off <span>$2,099 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images.unsplash.com/photo-1599451897608-ad6eb8676edf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aGFpciUyMG9pbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">55% off <span>$889 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">65% off <span>$489 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://img.freepik.com/premium-photo/perfume-bottle-with-water_160204-2750.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">54% off <span>$399 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    
+       <!-- beauty div end -->
+
+                       <!-- eclectronic div start  -->
+      <div class="container mt-5" id="eclectronic-card">
+        <h1 class="pb-1 font-weight-bold"> ECLECTRONICES ITEM,S</h1>
+        <h3  class="pb-4">Up to 55% Off</h3>
+        <div class="row">
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://www.gizbot.com/images/2020-03/realme-6-pro_1583403322110.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">43% off <span>$11,799 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202203/realme9series_07032022_1.jpg?size=690:388" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">39% off <span>$13,299 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://manofmany.com/wp-content/uploads/2022/09/iPhone-14-pro-Max.jpg" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">60% off <span>$142,000 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://images.unsplash.com/photo-1611078489935-0cb964de46d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">53% off <span>$49,999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://www.apple.com/in/ipad-pro/images/overview/hero/hero_combo__fcqcc3hbzjyy_large.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">50% off <span>$99,449 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="man-div col-12 col-lg-2 col-md-4">
+                <div class="card mans-card text-center " style="width: 13rem;">
+                    <img src="https://www.boat-lifestyle.com/cdn/shop/products/Backup_green_3_1500x.png?v=1667514522" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-title ">54% off <span>$999 </span></p> 
+                      <a href="#" class="btn btn-outline-dark btn-wish "> Wishlist</a>
+                      <a href="#" class="btn btn-outline-warning btn--buy"> Buy now</a>
+                    </div>
+                  </div>
+            </div>
+            
+        </div>
+    </div>
+    
+       <!-- eclectronic div end -->
+     <!-- infomr-div start -->
+     <div class="infomr-div">
+       <div class="container mt-5">
+        <h2 class="pb-5">TERMS & CONDITIONS</h3>
+        <h4>No Cost EMI
+          </h4>
+          <p> In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</p>
+      <h4 class="pt-3 pb-2">EMI on Debit Cards</h4>
+      <p>Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</p>
+      <h4 class="pt-3 pb-2">Mobile Exchange Offers</h4>
+      <p>Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</p>
+     <h4 class="pt-3 ">What Can You Buy From Shopcart?</h4>
+     <h4 class="pt-1 pb-2">Mobile Phones</h4>
+     <p>From budget phones to state-of-the-art smartphones, we have a mobile for everybody out there. Whether you're looking for larger, fuller screens, power-packed batteries, blazing-fast processors, beautification apps, high-tech selfie cameras or just large internal space, we take care of all the essentials. Shop from top brands in the country like Samsung, Apple, Oppo, Xiaomi, Realme, Vivo, and Honor to name a few. Rest assured, you're buying from only the most reliable names in the market. What's more, with Flipkart's Complete Mobile Protection Plan, you will never again find the need to run around service centres. This plan entails you to a number of post-purchase solutions, starting at as low as Rupees 99 only! Broken screens, liquid damage to phone, hardware and software glitches, and replacements - the Flipkart Complete Mobile Protection covers a comprehensive range of post-purchase problems, with door-to-door services.
+    </p>
+    <h4 class="pt-3 pb-2">Electronic Devices and Accessories</h4>
+    <p>When it comes to laptops, we are not far behind. Filter among dozens of super-fast operating systems, hard disk capacity, RAM, lifestyle, screen size and many other criterias for personalized results in a flash. All you students out there, confused about what laptop to get? Our Back To College Store segregates laptops purpose wise (gaming, browsing and research, project work, entertainment, design, multitasking) with recommendations from top brands and industry experts, facilitating a shopping experience that is quicker and simpler.
+    </p><br>
+    <p>Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store. Photography lovers, you couldn't land at a better page than ours. Cutting-edge DSLR cameras, ever reliable point-and-shoot cameras, millennial favourite instant cameras or action cameras for adventure junkies: our range of cameras is as much for beginners as it is for professionals. Canon, Nikon, GoPro, Sony, and Fujifilm are some big names you'll find in our store.
+    </p><br>
+   <p>Turn your home into a theatre with a stunning surround sound system. Choose from our elaborate range of Sony home theatres, JBL soundbars and Philips tower speakers for an experience to remember.</p> <br>
+    <h4 class="pt-1 pb-2">Large Appliances</h4>
+    <p>Sleek TVs, power-saving refrigerators, rapid-cooling ACs, resourceful washing machines - discover everything you need to run a house under one roof. Our Dependable TV and Appliance Store ensures zero transit damage, with a replacement guarantee if anything goes wrong; delivery and installation as per your convenience and a double warranty (Official Brand Warranty along with an extended Flipkart Warranty) - rest assured, value for money is what is promised and delivered. Shop from market leaders in the country like Samsung, LG, Whirlpool, Midea, Mi, Vu, Panasonic, Godrej, Sony, Daikin, and Hitachi among many others</p>
+<br>
+<p>For certain product categories, Customers meeting the eligibility criteria will have the option to buy larger quantities. To know more on the eligibility criteria and terms and conditions, please reach out to Purchases.oni@flipkart.com.</p>
+ <h4 class="pt-3 pb-2">Small Home Appliances</h4>
+ <p>Find handy and practical home appliances designed to make your life simpler: electric kettles, OTGs, microwave ovens, sandwich makers, hand blenders, coffee makers, and many more other time-saving appliances that are truly crafted for a quicker lifestyle. Live life king size with these appliances at home.</p>
+<h4 class="pt-3 pb-2">Baby and Kids</h4>
+<p class="pb-5">Your kids deserve only the best. From bodysuits, booties, diapers to strollers, if you're an expecting mother or a new mother, you will find everything you need to set sail on a smooth parenting journey with the help of our baby care collection. When it comes to safety, hygiene and comfort, you can rely on us without a second thought. Huggies, Pampers, MamyPoko, and Johnson & Johnson: we host only the most-trusted names in the business for your baby.</p>
+</div>
+  </div>
+        <!-- infomr-div end  -->
+        <!-- footer div -->
+
+        <footer>
+            <div class="container footer-div" id="footer">
+                <div class="row">
+                    <div class="col-6 col-lg-3 col-md-6">
+                         <h1 class="fw-bold">ABOUT</h1>
+                        <p><a href="">Contact us</a> <br>
+                           <a href="">About us</a><br>
+                           <a href="">Careers  </a>  <br>
+                           <a href="">Press</a><br>
+                           <a href="">Cleartrip
+                        </a><br>
+                           <a href="">Shopcart stories</a><br>
+
+                    </div>
+    
+                    <div class="col-6 col-lg-3 col-md-6">
+                         <h1 class="fw-bold">HELP
+                        </h1>
+                        <p class="pb-4"><a href="">                                
+                                      Payment</a><br>
+                            <a href=""> Shiping</a><br>
+                            <a href="">Canceletion and return</a><br>
+                            <a href=""> FAQ</a><br>
+                            <a href="">Report</a><br>
+                           
+                            </p>
+                    </div>
+    
+                    <div class="col-6 col-lg-3 col-md-6">
+                         <h1 class="fw-bold">CONSUMER POLICY
+                        </h1>
+                        <p><a href=""> Cancellation & Returns
+                         
+                          
+                         
+                         
+                         
+                         </a><br>
+                            <a href="">   Terms Of Use</a><br>
+                            <a href=""> Security</a><br>
+                            <a href=""> Privacy</a><br>
+                            <a href=""> Sitemap</a><br>
+                            <a href="">  Grievance Redressal</a><br>
+                            <a href="">  EPR Compliance</a><br>
+                           </p>
+                    </div>
+    
+                    <div class="col-6 col-lg-3 col-md-6">
+                         <h1 class="fw-bold">Follow Us
+                        </h1>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100021996673749" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </footer>
+
+</body>
+</html>
