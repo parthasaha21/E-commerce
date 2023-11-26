@@ -387,4 +387,6 @@ strike{
 .price-boxs p {
     color: black;
     font-weight: 600;
+    padding: 0px;
+    margin: 0px;
 }
